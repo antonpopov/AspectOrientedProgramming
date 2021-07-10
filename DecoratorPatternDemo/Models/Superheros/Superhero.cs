@@ -1,4 +1,4 @@
-﻿namespace DecoratorPatternDemo.Models
+﻿namespace DecoratorPatternDemo.Models.Superheros
 {
     public class Superhero
     {

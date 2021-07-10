@@ -1,7 +1,7 @@
 ﻿namespace DecoratorPatternDemo.Controllers
 {
-    using DecoratorPatternDemo.Models;
-    using DecoratorPatternDemo.Services.SuperHeros;
+    using DecoratorPatternDemo.Models.Superheros;
+    using DecoratorPatternDemo.Services.Superheros;
     using Microsoft.AspNetCore.Mvc;
 
     [Route("api/[controller]")]

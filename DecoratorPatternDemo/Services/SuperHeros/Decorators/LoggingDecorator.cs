@@ -1,6 +1,6 @@
-﻿namespace DecoratorPatternDemo.Services.SuperHeros.Decorators
+﻿namespace DecoratorPatternDemo.Services.Superheros.Decorators
 {
-    using DecoratorPatternDemo.Models;
+    using DecoratorPatternDemo.Models.Superheros;
     using System;
     using System.Collections.Generic;
 

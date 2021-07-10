@@ -4,8 +4,8 @@
 
     using Autofac;
     using DecoratorPatternDemo.Controllers;
-    using DecoratorPatternDemo.Services.SuperHeros;
-    using DecoratorPatternDemo.Services.SuperHeros.Decorators;
+    using DecoratorPatternDemo.Services.Superheros;
+    using DecoratorPatternDemo.Services.Superheros.Decorators;
 
     public class SuperHerosModule : Module
     {

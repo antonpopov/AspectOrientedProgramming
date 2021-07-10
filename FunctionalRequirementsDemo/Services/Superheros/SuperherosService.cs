@@ -1,6 +1,6 @@
-﻿namespace DecoratorPatternDemo.Services.Superheros
+﻿namespace FunctionalRequirementsDemo.Services.Superheros
 {
-    using DecoratorPatternDemo.Models.Superheros;
+    using FunctionalRequirementsDemo.Models;
     using System.Collections.Generic;
     using System.Linq;
 

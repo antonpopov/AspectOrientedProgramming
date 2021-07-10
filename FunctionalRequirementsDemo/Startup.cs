@@ -1,4 +1,4 @@
-namespace DecoratorPatternDemo
+namespace FunctionalRequirementsDemo
 {
     using System.Reflection;
 
@@ -28,7 +28,7 @@ namespace DecoratorPatternDemo
 
             services
                 .AddSwaggerGen(c
-                    => c.SwaggerDoc("v1", new OpenApiInfo { Title = "DecoratorPatternDemo", Version = "v1" }));
+                    => c.SwaggerDoc("v1", new OpenApiInfo { Title = "FunctionalRequirementsDemo", Version = "v1" }));
         }
 
         public void ConfigureContainer(ContainerBuilder builder)
@@ -44,7 +44,7 @@ namespace DecoratorPatternDemo
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "DecoratorPatternDemo v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "FunctionalRequirementsDemo v1"));
             }
 
             app
