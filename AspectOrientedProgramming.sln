@@ -3,9 +3,30 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. Decorotor Pattern", "01. Decorotor Pattern", "{234750DF-FBBF-45EB-B361-7D829BDF5BA8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Functional Requirements", "02. Functional Requirements", "{3C384BFD-8C14-498B-BE55-ACCBAABFF660}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00. Basic Project", "00. Basic Project", "{B5DCEB4A-955B-4E21-80F6-C0E9D134FDB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicProject", "BasicProject\BasicProject.csproj", "{35A7A2B8-B5BA-43C5-9089-AD3EF37B16EF}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35A7A2B8-B5BA-43C5-9089-AD3EF37B16EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35A7A2B8-B5BA-43C5-9089-AD3EF37B16EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35A7A2B8-B5BA-43C5-9089-AD3EF37B16EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35A7A2B8-B5BA-43C5-9089-AD3EF37B16EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{35A7A2B8-B5BA-43C5-9089-AD3EF37B16EF} = {B5DCEB4A-955B-4E21-80F6-C0E9D134FDB6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A353BE29-1333-4F35-B3A4-75C06BC6DBA1}
