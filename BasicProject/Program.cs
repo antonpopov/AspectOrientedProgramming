@@ -15,9 +15,8 @@ namespace BasicProject
             => Host
                 .CreateDefaultBuilder(args)
                 .UseServiceProviderFactory(new AutofacServiceProviderFactory())
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                });
+                .ConfigureWebHostDefaults(webBuilder
+                    => webBuilder
+                        .UseStartup<Startup>());
     }
 }

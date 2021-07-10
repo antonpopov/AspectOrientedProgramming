@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. Decorotor Pattern", "01
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Functional Requirements", "02. Functional Requirements", "{3C384BFD-8C14-498B-BE55-ACCBAABFF660}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00. Basic Project", "00. Basic Project", "{B5DCEB4A-955B-4E21-80F6-C0E9D134FDB6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00. Autofac Configuration", "00. Autofac Configuration", "{B5DCEB4A-955B-4E21-80F6-C0E9D134FDB6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicProject", "BasicProject\BasicProject.csproj", "{35A7A2B8-B5BA-43C5-9089-AD3EF37B16EF}"
 EndProject
