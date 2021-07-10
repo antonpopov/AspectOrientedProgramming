@@ -1,4 +1,4 @@
-﻿namespace FunctionalRequirementsDemo.Models
+﻿namespace FunctionalRequirementsDemo.Models.Superheros
 {
     public enum Universe
     {

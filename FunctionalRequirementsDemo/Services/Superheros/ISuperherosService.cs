@@ -2,7 +2,7 @@
 {
     using System.Collections.Generic;
 
-    using FunctionalRequirementsDemo.Models;
+    using FunctionalRequirementsDemo.Models.Superheros;
 
     public interface ISuperherosService
     {

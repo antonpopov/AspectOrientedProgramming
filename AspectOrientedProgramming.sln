@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. Decorotor Pattern", "01. Decorotor Pattern", "{234750DF-FBBF-45EB-B361-7D829BDF5BA8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. Decorotor Pattern", "03. Decorotor Pattern", "{234750DF-FBBF-45EB-B361-7D829BDF5BA8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Functional Requirements", "02. Functional Requirements", "{3C384BFD-8C14-498B-BE55-ACCBAABFF660}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. Functional Requirements", "01. Functional Requirements", "{3C384BFD-8C14-498B-BE55-ACCBAABFF660}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00. Wiring Autofac up", "00. Wiring Autofac up", "{B5DCEB4A-955B-4E21-80F6-C0E9D134FDB6}"
 EndProject
@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicProject", "BasicProjec
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecoratorPatternDemo", "DecoratorPatternDemo\DecoratorPatternDemo.csproj", "{25192C3B-03F3-4222-9EC2-CF2F0A571034}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionalRequirementsDemo", "FunctionalRequirementsDemo\FunctionalRequirementsDemo.csproj", "{C167F84E-B38D-49FE-AAFB-1FC36211D352}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionalRequirementsDemo", "FunctionalRequirementsDemo\FunctionalRequirementsDemo.csproj", "{C167F84E-B38D-49FE-AAFB-1FC36211D352}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -4,6 +4,7 @@ namespace FunctionalRequirementsDemo
 
     using Autofac;
     using Autofac.Extensions.DependencyInjection;
+    using FunctionalRequirementsDemo.Services.Superheros;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.Extensions.Configuration;
@@ -29,6 +30,9 @@ namespace FunctionalRequirementsDemo
             services
                 .AddSwaggerGen(c
                     => c.SwaggerDoc("v1", new OpenApiInfo { Title = "FunctionalRequirementsDemo", Version = "v1" }));
+
+            services
+                .AddScoped<ISuperherosService, SuperherosService>();
         }
 
         public void ConfigureContainer(ContainerBuilder builder)

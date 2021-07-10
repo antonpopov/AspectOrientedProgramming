@@ -1,8 +1,9 @@
 ﻿namespace FunctionalRequirementsDemo.Services.Superheros
 {
-    using FunctionalRequirementsDemo.Models;
     using System.Collections.Generic;
     using System.Linq;
+
+    using FunctionalRequirementsDemo.Models.Superheros;
 
     public class SuperherosService : ISuperherosService
     {
