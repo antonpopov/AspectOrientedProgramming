@@ -4,6 +4,8 @@ namespace DecoratorPatternDemo
 
     using Autofac;
     using Autofac.Extensions.DependencyInjection;
+    using DecoratorPatternDemo.Services;
+    using DecoratorPatternDemo.Services.Logging;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.Extensions.Configuration;
@@ -29,6 +31,10 @@ namespace DecoratorPatternDemo
             services
                 .AddSwaggerGen(c
                     => c.SwaggerDoc("v1", new OpenApiInfo { Title = "DecoratorPatternDemo", Version = "v1" }));
+
+            services
+                .AddScoped<ILoggerService, LoggerService>()
+                .AddScoped<IDateTimeProvider, DateTimeProvider>();
         }
 
         public void ConfigureContainer(ContainerBuilder builder)

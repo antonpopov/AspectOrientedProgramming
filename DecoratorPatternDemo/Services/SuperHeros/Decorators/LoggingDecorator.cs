@@ -1,56 +1,74 @@
 ﻿namespace DecoratorPatternDemo.Services.Superheros.Decorators
 {
     using DecoratorPatternDemo.Models.Superheros;
+    using DecoratorPatternDemo.Services.Logging;
     using System;
     using System.Collections.Generic;
 
     public class LoggingDecorator : ISuperherosService
     {
         private readonly ISuperherosService superherosService;
+        private readonly ILoggerService loggerService;
+        private readonly IDateTimeProvider dateTimeProvider;
 
-        public LoggingDecorator(ISuperherosService superherosService)
-            => this.superherosService = superherosService;
+        public LoggingDecorator(
+            ISuperherosService superherosService,
+            ILoggerService loggerService,
+            IDateTimeProvider dateTimeProvider)
+        {
+            this.superherosService = superherosService;
+            this.loggerService = loggerService;
+            this.dateTimeProvider = dateTimeProvider;
+        }
 
         public Superhero Get(int id)
         {
-            Console.WriteLine($"Stepped in {nameof(this.Get)} at {DateTime.Now}");
+            this.loggerService
+                    .Log($"Stepped in {nameof(this.Get)} at {this.dateTimeProvider.GetDateTimeNow()}");
 
             var result = this.superherosService.Get(id);
 
-            Console.WriteLine($"Stepped out of {nameof(this.Get)} at {DateTime.Now}");
+            this.loggerService
+                    .Log($"Stepped out of {nameof(this.Get)} at {this.dateTimeProvider.GetDateTimeNow()}");
 
             return result;
         }
 
         public IEnumerable<Superhero> GetAll()
         {
-            Console.WriteLine($"Stepped in {nameof(this.GetAll)} at {DateTime.Now}");
+            this.loggerService
+                    .Log($"Stepped in {nameof(this.GetAll)} at {this.dateTimeProvider.GetDateTimeNow()}");
 
             var result = this.superherosService.GetAll();
 
-            Console.WriteLine($"Stepped out of {nameof(this.GetAll)} at {DateTime.Now}");
+            this.loggerService
+                    .Log($"Stepped out of {nameof(this.GetAll)} at {this.dateTimeProvider.GetDateTimeNow()}");
 
             return result;
         }
 
         public Superhero Update(Superhero updatedSuperhero)
         {
-            Console.WriteLine($"Stepped in {nameof(this.Update)} at {DateTime.Now}");
+            this.loggerService
+                    .Log($"Stepped in {nameof(this.Update)} at {this.dateTimeProvider.GetDateTimeNow()}");
 
             var result = this.superherosService.Update(updatedSuperhero);
 
-            Console.WriteLine($"Stepped out of {nameof(this.Update)} at {DateTime.Now}");
+            this.loggerService
+                    .Log($"Stepped out of {nameof(this.Update)} at {this.dateTimeProvider.GetDateTimeNow()}");
 
             return result;
         }
 
         public Superhero Delete(int id)
         {
-            Console.WriteLine($"Stepped in {nameof(this.Delete)} at {DateTime.Now}");
+            this.loggerService
+                    .Log($"Stepped in {nameof(this.Delete)} at {this.dateTimeProvider.GetDateTimeNow()}");
 
             var result = this.superherosService.Delete(id);
 
-            Console.WriteLine($"Stepped out of {nameof(this.Delete)} at {DateTime.Now}");
+            this.loggerService
+                    .Log($"Stepped out of {nameof(this.Delete)} at {this.dateTimeProvider.GetDateTimeNow()}");
 
             return result;
         }

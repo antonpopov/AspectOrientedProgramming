@@ -1,15 +1,20 @@
 ﻿namespace DecoratorPatternDemo.Services.Superheros.Decorators
 {
     using DecoratorPatternDemo.Models.Superheros;
+    using DecoratorPatternDemo.Services.Logging;
     using System;
     using System.Collections.Generic;
 
     public class ExceptionHandlingDecorator : ISuperherosService
     {
         private readonly ISuperherosService superherosService;
+        private readonly ILoggerService loggerService;
 
-        public ExceptionHandlingDecorator(ISuperherosService superherosService)
-            => this.superherosService = superherosService;
+        public ExceptionHandlingDecorator(ISuperherosService superherosService, ILoggerService loggerService)
+        {
+            this.superherosService = superherosService;
+            this.loggerService = loggerService;
+        }
 
         public Superhero Delete(int id)
         {
@@ -20,7 +25,8 @@
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"{ex.Message}{Environment.NewLine}{ex.Message}{Environment.NewLine}");
+                this.loggerService
+                        .Log($"{ex.Message}{Environment.NewLine}{ex.Message}{Environment.NewLine}");
 
                 throw;
             }
@@ -38,7 +44,8 @@
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"{ex.Message}{Environment.NewLine}{ex.Message}{Environment.NewLine}");
+                this.loggerService
+                        .Log($"{ex.Message}{Environment.NewLine}{ex.Message}{Environment.NewLine}");
 
                 throw;
             }
@@ -56,7 +63,8 @@
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"{ex.Message}{Environment.NewLine}{ex.Message}{Environment.NewLine}");
+                this.loggerService
+                        .Log($"{ex.Message}{Environment.NewLine}{ex.Message}{Environment.NewLine}");
 
                 throw;
             }
@@ -74,7 +82,8 @@
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"{ex.Message}{Environment.NewLine}{ex.Message}{Environment.NewLine}");
+                this.loggerService
+                        .Log($"{ex.Message}{Environment.NewLine}{ex.Message}{Environment.NewLine}");
 
                 throw;
             }
