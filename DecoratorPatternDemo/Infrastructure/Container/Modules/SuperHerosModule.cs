@@ -7,7 +7,7 @@
     using DecoratorPatternDemo.Services.SuperHeros;
     using DecoratorPatternDemo.Services.SuperHeros.Decorators;
 
-    public class MyApplicationModule : Module
+    public class SuperHerosModule : Module
     {
         private static Type ISuperHeroServiceType = typeof(ISuperherosService);
 
