@@ -26,11 +26,9 @@
             }
         };
 
-        public async Task<Superhero> GetAsync(int id)
-            => await Task
-                .FromResult(
-                    Superheros
-                        .FirstOrDefault(x => x.Id == id));
+        public Superhero Get(int id)
+            => Superheros
+                    .FirstOrDefault(x => x.Id == id);
 
         public async Task<IEnumerable<Superhero>> GetAllAsync()
             => await Task

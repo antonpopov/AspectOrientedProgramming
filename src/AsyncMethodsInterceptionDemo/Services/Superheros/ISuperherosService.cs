@@ -7,7 +7,7 @@
 
     public interface ISuperherosService
     {
-        Task<Superhero> GetAsync(int id);
+        Superhero Get(int id);
 
         Task<IEnumerable<Superhero>> GetAllAsync();
 

@@ -24,9 +24,9 @@
 
         [HttpGet]
         [Route("get-by-id")]
-        public async Task<ActionResult<Superhero>> Get(int id)
+        public ActionResult<Superhero> Get(int id)
         {
-            var superHero = await this.superHerosService.GetAsync(id);
+            var superHero = this.superHerosService.Get(id);
 
             return this.Ok(superHero);
         }
