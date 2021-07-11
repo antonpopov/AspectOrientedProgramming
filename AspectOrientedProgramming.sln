@@ -27,7 +27,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecoratorPatternDemo", "Dec
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DynamicDecoratorsDemo", "DynamicDecoratorsDemo\DynamicDecoratorsDemo.csproj", "{34C7887C-02FA-4889-8F28-93747464632C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyGenerationDemo", "ProxyGenerationHooksDemo\ProxyGenerationDemo.csproj", "{471F9CDB-2A49-422B-8CF2-80ED027031EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyGenerationDemo", "ProxyGenerationHooksDemo\ProxyGenerationDemo.csproj", "{471F9CDB-2A49-422B-8CF2-80ED027031EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. Asynchronous Methods Interception", "05. Asynchronous Methods Interception", "{66DE8A72-3E54-4882-96DF-4E1B8C6FC9D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncMethodsInterceptionDemo", "AsyncMethodsInterceptionDemo\AsyncMethodsInterceptionDemo.csproj", "{3A8A8499-77E1-459A-84FE-234E34E1CFC3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autofac.AsyncExtras.DynamicProxy", "Autofac.AsyncExtras.DynamicProxy\Autofac.AsyncExtras.DynamicProxy.csproj", "{E50FE11A-A41B-4AA7-8E2B-FCB69EFE2376}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +73,14 @@ Global
 		{471F9CDB-2A49-422B-8CF2-80ED027031EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{471F9CDB-2A49-422B-8CF2-80ED027031EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{471F9CDB-2A49-422B-8CF2-80ED027031EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A8A8499-77E1-459A-84FE-234E34E1CFC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A8A8499-77E1-459A-84FE-234E34E1CFC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A8A8499-77E1-459A-84FE-234E34E1CFC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A8A8499-77E1-459A-84FE-234E34E1CFC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E50FE11A-A41B-4AA7-8E2B-FCB69EFE2376}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E50FE11A-A41B-4AA7-8E2B-FCB69EFE2376}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E50FE11A-A41B-4AA7-8E2B-FCB69EFE2376}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E50FE11A-A41B-4AA7-8E2B-FCB69EFE2376}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,6 +94,8 @@ Global
 		{5706C804-3415-4469-923F-633BC6A64A32} = {234750DF-FBBF-45EB-B361-7D829BDF5BA8}
 		{34C7887C-02FA-4889-8F28-93747464632C} = {1C9CCC29-8B6D-4473-AA02-1FDF18926F6C}
 		{471F9CDB-2A49-422B-8CF2-80ED027031EF} = {1C9CCC29-8B6D-4473-AA02-1FDF18926F6C}
+		{3A8A8499-77E1-459A-84FE-234E34E1CFC3} = {66DE8A72-3E54-4882-96DF-4E1B8C6FC9D1}
+		{E50FE11A-A41B-4AA7-8E2B-FCB69EFE2376} = {66DE8A72-3E54-4882-96DF-4E1B8C6FC9D1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A353BE29-1333-4F35-B3A4-75C06BC6DBA1}

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>.NET Team</Authors>
+    <Company>Vivacom</Company>
+    <Description>Extensions to wire Castle.Core.AsyncInterceptor to Autofac</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.2.0" />
+    <PackageReference Include="Castle.Core" Version="4.4.1" />
+    <PackageReference Include="Castle.Core.AsyncInterceptor" Version="2.0.21-alpha" />
+  </ItemGroup>
+
+</Project>
