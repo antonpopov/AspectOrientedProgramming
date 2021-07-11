@@ -21,7 +21,7 @@
             //    .Where(x
             //        => x.IsClass &&
             //           x.GetInterfaces()
-            //                .Any(y => y == typeof(IInterceptor)))
+            //                .Any(y => y == typeof(IAsyncInterceptor)))
             //    .AsSelf()
             //    .InstancePerLifetimeScope();
         }

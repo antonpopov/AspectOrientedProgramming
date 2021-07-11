@@ -3,6 +3,7 @@
     using AsyncMethodsInterceptionDemo.Models.Superheros;
     using AsyncMethodsInterceptionDemo.Services.Superheros;
     using Microsoft.AspNetCore.Mvc;
+    using System.Threading.Tasks;
 
     [Route("api/[controller]")]
     [ApiController]
@@ -14,26 +15,26 @@
             => this.superHerosService = superHerosService;
 
         [HttpGet]
-        public ActionResult<Superhero> GetAll()
+        public async Task<ActionResult<Superhero>> GetAll()
         {
-            var superHeros = this.superHerosService.GetAll();
+            var superHeros = await this.superHerosService.GetAllAsync();
 
             return this.Ok(superHeros);
         }
 
         [HttpGet]
         [Route("get-by-id")]
-        public ActionResult<Superhero> Get(int id)
+        public async Task<ActionResult<Superhero>> Get(int id)
         {
-            var superHero = this.superHerosService.Get(id);
+            var superHero = await this.superHerosService.GetAsync(id);
 
             return this.Ok(superHero);
         }
 
         [HttpPut]
-        public ActionResult<Superhero> Update(Superhero superHero)
+        public async Task<ActionResult<Superhero>> Update(Superhero superHero)
         {
-            var updatedSuperHero = this.superHerosService.Update(superHero);
+            var updatedSuperHero = await this.superHerosService.UpdateAsync(superHero);
             if (updatedSuperHero == null)
             {
                 return this.NotFound();
@@ -43,9 +44,9 @@
         }
 
         [HttpDelete]
-        public ActionResult Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
-            var existingSuperhero = this.superHerosService.Delete(id);
+            var existingSuperhero = await this.superHerosService.DeleteAsync(id);
 
             if (existingSuperhero == null)
             {

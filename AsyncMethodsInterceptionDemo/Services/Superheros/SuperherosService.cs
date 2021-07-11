@@ -1,9 +1,11 @@
-﻿using AsyncMethodsInterceptionDemo.Models.Superheros;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace AsyncMethodsInterceptionDemo.Services.Superheros
+﻿namespace AsyncMethodsInterceptionDemo.Services.Superheros
 {
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+
+    using AsyncMethodsInterceptionDemo.Models.Superheros;
+
     public class SuperherosService : ISuperherosService
     {
         private static readonly IList<Superhero> Superheros = new List<Superhero>
@@ -24,15 +26,17 @@ namespace AsyncMethodsInterceptionDemo.Services.Superheros
             }
         };
 
-        public Superhero Get(int id)
-            => Superheros
-                    .FirstOrDefault(x => x.Id == id);
+        public async Task<Superhero> GetAsync(int id)
+            => await Task
+                .FromResult(
+                    Superheros
+                        .FirstOrDefault(x => x.Id == id));
 
-        public IEnumerable<Superhero> GetAll()
-            => Superheros
-                    .ToList();
+        public async Task<IEnumerable<Superhero>> GetAllAsync()
+            => await Task
+                .FromResult(Superheros.ToList());
 
-        public Superhero Update(Superhero updatedSuperhero)
+        public async Task<Superhero> UpdateAsync(Superhero updatedSuperhero)
         {
             var existingSuperhero = Superheros
                .SingleOrDefault(x => x.Id == updatedSuperhero.Id);
@@ -43,11 +47,13 @@ namespace AsyncMethodsInterceptionDemo.Services.Superheros
             Superheros
                 .Add(updatedSuperhero);
 
-            return updatedSuperhero;
+            return await Task.FromResult(updatedSuperhero);
         }
 
-        public Superhero Delete(int id)
-            => Superheros
-                    .SingleOrDefault(x => x.Id == id);
+        public async Task<Superhero> DeleteAsync(int id)
+            => await Task
+                .FromResult(
+                    Superheros
+                        .SingleOrDefault(x => x.Id == id));
     }
 }

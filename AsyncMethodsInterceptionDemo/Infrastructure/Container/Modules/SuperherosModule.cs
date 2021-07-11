@@ -3,7 +3,7 @@
     using AsyncMethodsInterceptionDemo.Infrastructure.Container.Interceptors;
     using AsyncMethodsInterceptionDemo.Services.Superheros;
     using Autofac;
-    using Autofac.Extras.DynamicProxy;
+    using Autofac.AsyncExtras.DynamicProxy;
 
     public class SuperHerosModule : Module
     {
@@ -12,7 +12,7 @@
             builder
                 .RegisterType<SuperherosService>()
                 .As<ISuperherosService>()
-                .EnableInterfaceInterceptors()
+                .EnableAsyncInterfaceInterceptors()
                 .InterceptedBy(typeof(LoggingInterceptor), typeof(ExceptionHandlingInterceptor), typeof(TransactionInterceptor))
                 .InstancePerLifetimeScope();
         }

@@ -1,16 +1,18 @@
-﻿using AsyncMethodsInterceptionDemo.Models.Superheros;
-using System.Collections.Generic;
-
-namespace AsyncMethodsInterceptionDemo.Services.Superheros
+﻿namespace AsyncMethodsInterceptionDemo.Services.Superheros
 {
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
+
+    using AsyncMethodsInterceptionDemo.Models.Superheros;
+
     public interface ISuperherosService
     {
-        Superhero Get(int id);
+        Task<Superhero> GetAsync(int id);
 
-        IEnumerable<Superhero> GetAll();
+        Task<IEnumerable<Superhero>> GetAllAsync();
 
-        Superhero Update(Superhero updatedSuperhero);
+        Task<Superhero> UpdateAsync(Superhero updatedSuperhero);
 
-        Superhero Delete(int id);
+        Task<Superhero> DeleteAsync(int id);
     }
 }
