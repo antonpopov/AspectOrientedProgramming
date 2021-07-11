@@ -6,4 +6,5 @@ Additional resources:
 
 - Books you can consider if you want to go deeper:
   * [Dependency Injection in .NET](https://www.manning.com/books/dependency-injection-in-dot-net)
+  * [Mastering Ninject for Dependency Injection](https://www.oreilly.com/library/view/mastering-ninject-for/9781782166207/)
   * [AOP in .NET](https://www.manning.com/books/aop-in-net)
