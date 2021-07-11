@@ -1,17 +1,18 @@
-using Autofac;
-using Autofac.Extensions.DependencyInjection;
-using DynamicDecoratorsDemo.Services;
-using DynamicDecoratorsDemo.Services.Logging;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.OpenApi.Models;
-using System.Reflection;
-
 namespace DynamicDecoratorsDemo
 {
+    using System.Reflection;
+
+    using Autofac;
+    using Autofac.Extensions.DependencyInjection;
+    using DynamicDecoratorsDemo.Services;
+    using DynamicDecoratorsDemo.Services.Logging;
+    using Microsoft.AspNetCore.Builder;
+    using Microsoft.AspNetCore.Hosting;
+    using Microsoft.Extensions.Configuration;
+    using Microsoft.Extensions.DependencyInjection;
+    using Microsoft.Extensions.Hosting;
+    using Microsoft.OpenApi.Models;
+
     public class Startup
     {
         public Startup(IConfiguration configuration)

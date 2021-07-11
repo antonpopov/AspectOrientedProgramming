@@ -1,9 +1,9 @@
-﻿using DynamicDecoratorsDemo.Models.Superheros;
-using DynamicDecoratorsDemo.Services.Superheros;
-using Microsoft.AspNetCore.Mvc;
-
-namespace DynamicDecoratorsDemo.Controllers
+﻿namespace DynamicDecoratorsDemo.Controllers
 {
+    using DynamicDecoratorsDemo.Models.Superheros;
+    using DynamicDecoratorsDemo.Services.Superheros;
+    using Microsoft.AspNetCore.Mvc;
+
     [Route("api/[controller]")]
     [ApiController]
     public class SuperherosController : ControllerBase

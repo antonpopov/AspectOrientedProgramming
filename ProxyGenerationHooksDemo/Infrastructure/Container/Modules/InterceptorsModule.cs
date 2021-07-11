@@ -1,10 +1,11 @@
-﻿using Autofac;
-using Castle.DynamicProxy;
-using ProxyGenerationDemo.Infrastructure.Container.Interceptors;
-using System.Linq;
-
-namespace ProxyGenerationDemo.Infrastructure.Container.Modules
+﻿namespace ProxyGenerationDemo.Infrastructure.Container.Modules
 {
+    using System.Linq;
+
+    using Autofac;
+    using Castle.DynamicProxy;
+    using ProxyGenerationDemo.Infrastructure.Container.Interceptors;
+
     public class InterceptorsModule : Module
     {
         protected override void Load(ContainerBuilder builder)

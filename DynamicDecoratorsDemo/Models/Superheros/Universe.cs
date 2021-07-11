@@ -1,5 +1,4 @@
-﻿
-namespace DynamicDecoratorsDemo.Models.Superheros
+﻿namespace DynamicDecoratorsDemo.Models.Superheros
 {
     public enum Universe
     {

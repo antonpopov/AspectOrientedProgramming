@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace ProxyGenerationDemo.Services.Logging
+﻿namespace ProxyGenerationDemo.Services.Logging
 {
+    using System;
+
     public class LoggerService : ILoggerService
     {
         public void Log(string message)

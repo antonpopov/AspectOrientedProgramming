@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace ProxyGenerationDemo.Services
+﻿namespace ProxyGenerationDemo.Services
 {
+    using System;
+
     public interface IDateTimeProvider
     {
         DateTime GetDateTimeNow();

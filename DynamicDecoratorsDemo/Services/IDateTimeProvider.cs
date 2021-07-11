@@ -1,7 +1,6 @@
-﻿using System;
-
-namespace DynamicDecoratorsDemo.Services
+﻿namespace DynamicDecoratorsDemo.Services
 {
+    using System;
     public interface IDateTimeProvider
     {
         DateTime GetDateTimeNow();

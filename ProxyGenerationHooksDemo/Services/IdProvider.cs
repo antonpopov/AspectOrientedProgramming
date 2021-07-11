@@ -1,5 +1,4 @@
-﻿
-namespace ProxyGenerationDemo.Services
+﻿namespace ProxyGenerationDemo.Services
 {
     public static class IdProvider
     {

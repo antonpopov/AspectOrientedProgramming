@@ -1,9 +1,10 @@
-﻿using DynamicDecoratorsDemo.Models.Superheros;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace DynamicDecoratorsDemo.Services.Superheros
+﻿namespace DynamicDecoratorsDemo.Services.Superheros
 {
+    using System.Collections.Generic;
+    using System.Linq;
+
+    using DynamicDecoratorsDemo.Models.Superheros;
+
     public class SuperherosService : ISuperherosService
     {
         private static readonly IList<Superhero> Superheros = new List<Superhero>

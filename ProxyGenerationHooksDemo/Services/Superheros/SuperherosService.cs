@@ -1,9 +1,10 @@
-﻿using ProxyGenerationDemo.Models.Superheros;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace ProxyGenerationDemo.Services.Superheros
+﻿namespace ProxyGenerationDemo.Services.Superheros
 {
+    using System.Collections.Generic;
+    using System.Linq;
+
+    using ProxyGenerationDemo.Models.Superheros;
+
     public class SuperherosService : ISuperherosService
     {
         private static readonly IList<Superhero> Superheros = new List<Superhero>

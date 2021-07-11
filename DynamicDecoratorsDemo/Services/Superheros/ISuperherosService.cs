@@ -1,8 +1,9 @@
-﻿using DynamicDecoratorsDemo.Models.Superheros;
-using System.Collections.Generic;
-
-namespace DynamicDecoratorsDemo.Services.Superheros
+﻿namespace DynamicDecoratorsDemo.Services.Superheros
 {
+    using System.Collections.Generic;
+
+    using DynamicDecoratorsDemo.Models.Superheros;
+
     public interface ISuperherosService
     {
         Superhero Get(int id);

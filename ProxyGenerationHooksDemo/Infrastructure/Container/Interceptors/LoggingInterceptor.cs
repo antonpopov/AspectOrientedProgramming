@@ -1,10 +1,11 @@
-﻿using Castle.DynamicProxy;
-using ProxyGenerationDemo.Services;
-using ProxyGenerationDemo.Services.Logging;
-using System;
-
-namespace ProxyGenerationDemo.Infrastructure.Container.Interceptors
+﻿namespace ProxyGenerationDemo.Infrastructure.Container.Interceptors
 {
+    using System;
+
+    using Castle.DynamicProxy;
+    using ProxyGenerationDemo.Services;
+    using ProxyGenerationDemo.Services.Logging;
+
     public class LoggingInterceptor : IInterceptor
     {
         private readonly ILoggerService loggerService;

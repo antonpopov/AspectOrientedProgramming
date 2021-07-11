@@ -1,5 +1,4 @@
-﻿
-namespace DynamicDecoratorsDemo.Services.Logging
+﻿namespace DynamicDecoratorsDemo.Services.Logging
 {
     public interface ILoggerService
     {

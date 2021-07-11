@@ -1,5 +1,4 @@
-﻿
-namespace ProxyGenerationDemo.Services.Logging
+﻿namespace ProxyGenerationDemo.Services.Logging
 {
     public interface ILoggerService
     {

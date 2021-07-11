@@ -1,9 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using ProxyGenerationDemo.Models.Superheros;
-using ProxyGenerationDemo.Services.Superheros;
-
-namespace ProxyGenerationDemo.Controllers
+﻿namespace ProxyGenerationDemo.Controllers
 {
+    using Microsoft.AspNetCore.Mvc;
+    using ProxyGenerationDemo.Models.Superheros;
+    using ProxyGenerationDemo.Services.Superheros;
+
     [Route("api/[controller]")]
     [ApiController]
     public class SuperherosController : ControllerBase

@@ -1,5 +1,4 @@
-﻿
-namespace ProxyGenerationDemo.Models.Superheros
+﻿namespace ProxyGenerationDemo.Models.Superheros
 {
     public class Superhero
     {

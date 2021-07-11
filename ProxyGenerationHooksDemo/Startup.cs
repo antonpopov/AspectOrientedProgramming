@@ -1,17 +1,18 @@
-using Autofac;
-using Autofac.Extensions.DependencyInjection;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.OpenApi.Models;
-using ProxyGenerationDemo.Services;
-using ProxyGenerationDemo.Services.Logging;
-using System.Reflection;
-
 namespace ProxyGenerationDemo
 {
+    using System.Reflection;
+
+    using Autofac;
+    using Autofac.Extensions.DependencyInjection;
+    using Microsoft.AspNetCore.Builder;
+    using Microsoft.AspNetCore.Hosting;
+    using Microsoft.Extensions.Configuration;
+    using Microsoft.Extensions.DependencyInjection;
+    using Microsoft.Extensions.Hosting;
+    using Microsoft.OpenApi.Models;
+    using ProxyGenerationDemo.Services;
+    using ProxyGenerationDemo.Services.Logging;
+
     public class Startup
     {
         public Startup(IConfiguration configuration)
