@@ -1,7 +1,7 @@
-﻿namespace BasicProject.Infrastructure.Container.Modules
+﻿namespace AutofacConfiguration.Infrastructure.Container.Modules
 {
     using Autofac;
-    using BasicProject.Services;
+    using AutofacConfiguration.Services;
 
     public class MyApplicationModule : Module
     {

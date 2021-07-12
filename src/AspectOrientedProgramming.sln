@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. Functional Requirements
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00. Wiring Autofac up", "00. Wiring Autofac up", "{B5DCEB4A-955B-4E21-80F6-C0E9D134FDB6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicProject", "BasicProject\BasicProject.csproj", "{35A7A2B8-B5BA-43C5-9089-AD3EF37B16EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutofacConfiguration", "BasicProject\AutofacConfiguration.csproj", "{35A7A2B8-B5BA-43C5-9089-AD3EF37B16EF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionalRequirementsDemo", "FunctionalRequirementsDemo\FunctionalRequirementsDemo.csproj", "{C167F84E-B38D-49FE-AAFB-1FC36211D352}"
 EndProject

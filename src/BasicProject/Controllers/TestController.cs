@@ -1,6 +1,6 @@
-﻿namespace BasicProject.Controllers
+﻿namespace AutofacConfiguration.Controllers
 {
-    using BasicProject.Services;
+    using AutofacConfiguration.Services;
     using Microsoft.AspNetCore.Mvc;
 
     [Route("api/[controller]")]

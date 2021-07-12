@@ -1,4 +1,4 @@
-namespace BasicProject
+namespace AutofacConfiguration
 {
     using Autofac.Extensions.DependencyInjection;
     using Microsoft.AspNetCore.Hosting;

@@ -1,4 +1,4 @@
-namespace BasicProject
+namespace AutofacConfiguration
 {
     using System.Reflection;
 

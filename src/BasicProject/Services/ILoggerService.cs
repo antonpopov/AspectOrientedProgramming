@@ -1,4 +1,4 @@
-﻿namespace BasicProject.Services
+﻿namespace AutofacConfiguration.Services
 {
     public interface ILoggerService
     {
