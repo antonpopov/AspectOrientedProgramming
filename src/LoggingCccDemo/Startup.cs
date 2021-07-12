@@ -1,5 +1,7 @@
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
+using LoggingCccDemo.Services;
+using LoggingCccDemo.Services.Logging;
 using LoggingCccDemo.Services.Superheros;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -31,7 +33,9 @@ namespace LoggingCccDemo
                     => c.SwaggerDoc("v1", new OpenApiInfo { Title = "LoggingCccDemo", Version = "v1" }));
 
             services
-                .AddScoped<ISuperherosService, SuperherosService>();
+                .AddScoped<ISuperherosService, SuperherosService>()
+                .AddScoped<IDateTimeProvider, DateTimeProvider>()
+                .AddScoped<ILoggerService, ConsoleLoggerService>();
         }
 
         public void ConfigureContainer(ContainerBuilder builder)
